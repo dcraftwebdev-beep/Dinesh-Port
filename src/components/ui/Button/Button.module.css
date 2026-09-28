@@ -1,0 +1,96 @@
+.button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 42px;
+  padding-inline: 18px;
+  overflow: hidden;
+  border: 1px solid transparent;
+  border-radius: calc(var(--radius-button) * var(--corner-fallback));
+  corner-shape: superellipse(1.3);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.01em;
+  white-space: nowrap;
+  transition: transform 0.25s var(--ease-out);
+}
+
+.button:active {
+  transform: scale(0.97);
+}
+
+.primary {
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.secondary {
+  background: var(--color-chip);
+  border-color: var(--color-chip-border);
+  color: var(--color-primary);
+}
+
+/* Soft light gradient that fades in on hover (no shadows) */
+.sheen {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(112deg, rgba(255, 255, 255, 0.4) -21%, rgba(255, 255, 255, 0) 100%);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.35s ease;
+}
+
+.label {
+  position: relative;
+}
+
+/* Icon slides in on the right on hover */
+.icon {
+  position: relative;
+  display: inline-flex;
+  width: 0;
+  margin-left: 0;
+  opacity: 0;
+  transform: translateX(-6px) scale(0.6);
+  transition:
+    width 0.35s var(--ease-out),
+    margin-left 0.35s var(--ease-out),
+    opacity 0.3s ease,
+    transform 0.35s var(--ease-out);
+}
+
+.button:hover .sheen,
+.button:focus-visible .sheen {
+  opacity: 1;
+}
+
+.button:hover .icon,
+.button:focus-visible .icon {
+  width: 16px;
+  margin-left: 8px;
+  opacity: 1;
+  transform: none;
+}
+
+/* Secondary: icon sits in a small black rounded badge */
+.secondary .icon {
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  border-radius: calc(8px * var(--corner-fallback));
+  corner-shape: superellipse(1.3);
+  background: var(--color-primary);
+  color: var(--color-on-primary);
+}
+
+.secondary:hover .icon,
+.secondary:focus-visible .icon {
+  width: 24px;
+}
+
+.sm {
+  height: 42px;
+  padding-inline: 14px;
+  border-radius: calc(14px * var(--corner-fallback));
+}

@@ -1,0 +1,126 @@
+.window {
+  position: absolute;
+  left: 120px;
+  top: 42px;
+  width: 427px;
+  height: 416px;
+  padding: 26px 30px;
+  border-radius: 18px;
+  background: #fff;
+  font-family: var(--font-sans);
+  color: #1c2533;
+  overflow: hidden;
+}
+
+.greeting {
+  font-size: 11px;
+  font-weight: 600;
+}
+
+.sub {
+  margin-top: 2px;
+  font-size: 6.5px;
+  color: #98a0ad;
+}
+
+.balance {
+  margin-top: 16px;
+  padding: 12px;
+  border-radius: 8px;
+  background: #f6f7f9;
+}
+
+.label {
+  font-size: 5.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #98a0ad;
+}
+
+.amount {
+  margin-top: 4px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.amount span {
+  font-size: 6px;
+  font-weight: 400;
+  color: #98a0ad;
+}
+
+.track {
+  height: 3px;
+  margin-block: 10px;
+  border-radius: 3px;
+  background: #e5e8ec;
+}
+
+.track span {
+  display: block;
+  width: 32%;
+  height: 100%;
+  border-radius: 3px;
+  background: #4a5568;
+}
+
+.grid {
+  display: flex;
+  gap: 40px;
+}
+
+.value {
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.section {
+  margin-top: 18px;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding-block: 7px;
+}
+
+.icon {
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+}
+
+.orange {
+  background: #fde7d6;
+}
+.blue {
+  background: #dfe9fd;
+}
+.grey {
+  background: #eceef1;
+}
+.green {
+  background: #dcf3e5;
+}
+.red {
+  background: #fbe0e4;
+}
+
+.name {
+  font-size: 7px;
+  font-weight: 600;
+}
+
+.meta {
+  font-size: 5.5px;
+  color: #98a0ad;
+}
+
+.itemAmount {
+  margin-left: auto;
+  font-size: 7px;
+  font-weight: 600;
+}

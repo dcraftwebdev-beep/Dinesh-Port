@@ -1,0 +1,74 @@
+.figure {
+  margin: 0;
+}
+
+.frame {
+  composes: panel from '../shared.module.css';
+  position: relative;
+  aspect-ratio: 667 / 500;
+  cursor: ew-resize;
+  touch-action: pan-y;
+  user-select: none;
+}
+
+.layer {
+  position: absolute;
+  inset: 0;
+}
+
+.after {
+  background: #e6e9ed;
+}
+
+.handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  margin-left: -1px;
+  background: var(--color-primary);
+  pointer-events: none;
+}
+
+.knob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 24px;
+  border-radius: 12px;
+  background: var(--color-primary);
+  color: #fff;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 2px;
+  transform: translate(-50%, -50%);
+}
+
+.label {
+  position: absolute;
+  bottom: 16px;
+  padding: 4px 10px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.85);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--color-heading);
+  pointer-events: none;
+}
+
+.labelLeft {
+  left: 16px;
+}
+
+.labelRight {
+  right: 16px;
+}
+
+.caption {
+  margin-top: 12px;
+  font-size: 14px;
+  color: var(--color-body);
+}

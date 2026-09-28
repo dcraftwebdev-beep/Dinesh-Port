@@ -1,0 +1,49 @@
+.grid {
+  composes: grid3 from '../shared.module.css';
+}
+
+.card {
+  composes: card from '../shared.module.css';
+  padding-block: 28px;
+  border: 1px solid transparent;
+}
+
+.highlight {
+  background: #fff;
+  border-color: var(--color-chip-border);
+}
+
+.index {
+  composes: index from '../shared.module.css';
+}
+
+.title {
+  composes: cardTitle from '../shared.module.css';
+  margin-top: 12px;
+}
+
+/* Cards without numbers (e.g. "5 users") start directly with the title */
+.title:first-child {
+  margin-top: 0;
+}
+
+.text {
+  composes: cardText from '../shared.module.css';
+  margin-top: 16px;
+}
+
+.four {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+@media (max-width: 1023px) {
+  .four {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 809px) {
+  .four {
+    grid-template-columns: minmax(0, 1fr);
+  }
+}

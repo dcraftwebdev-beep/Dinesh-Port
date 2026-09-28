@@ -1,0 +1,88 @@
+.cover {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 667 / 500;
+  overflow: hidden;
+  background-color: #c3d8ef;
+}
+
+/* Browser window centred on the gradient, as large as the card allows */
+.stage {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding-inline: 4%;
+}
+
+.frame {
+  width: 100%;
+}
+
+/* Full-width featured card: panoramic, with a narrower window so it stays tall */
+.wide {
+  aspect-ratio: 1364 / 620;
+}
+
+.wide .stage {
+  padding-inline: 18%;
+}
+
+/* Coded mockup: fills the card, or sits centred at full height on a wide card */
+.mockupStage {
+  margin-inline: auto;
+}
+
+.wide .mockupStage {
+  width: calc(100% * (620 / 1364) * (667 / 500));
+}
+
+@media (max-width: 809px) {
+  .wide {
+    aspect-ratio: 667 / 500;
+  }
+
+  .wide .stage {
+    padding-inline: 4%;
+  }
+
+  .wide .mockupStage {
+    width: auto;
+  }
+}
+
+/* Blue base with warm pink/orange bloom rising from the bottom */
+.sky {
+  background:
+    radial-gradient(40% 32% at 62% 104%, rgba(255, 120, 110, 0.85) 0%, rgba(255, 120, 110, 0) 100%),
+    radial-gradient(60% 45% at 55% 100%, rgba(246, 170, 220, 0.9) 0%, rgba(246, 170, 220, 0) 100%),
+    radial-gradient(50% 40% at 100% 100%, rgba(214, 190, 245, 0.8) 0%, rgba(214, 190, 245, 0) 100%),
+    linear-gradient(180deg, #b7d2ee 0%, #c2d5ef 55%, #d7d2ef 100%);
+}
+
+/* Pink + coral wash with blue edges */
+.blush {
+  background:
+    radial-gradient(30% 40% at 58% 45%, rgba(255, 138, 120, 0.8) 0%, rgba(255, 138, 120, 0) 100%),
+    radial-gradient(45% 60% at 70% 20%, rgba(248, 170, 205, 0.95) 0%, rgba(248, 170, 205, 0) 100%),
+    radial-gradient(40% 55% at 95% 90%, rgba(200, 190, 250, 0.95) 0%, rgba(200, 190, 250, 0) 100%),
+    linear-gradient(100deg, #b9d3ef 0%, #d9c7e4 45%, #f1c3d4 70%, #d4cdf4 100%);
+}
+
+/* Orange sunrise from the top centre */
+.sunrise {
+  background:
+    radial-gradient(22% 18% at 42% 0%, rgba(255, 110, 70, 0.9) 0%, rgba(255, 110, 70, 0) 100%),
+    radial-gradient(45% 30% at 55% 0%, rgba(255, 170, 200, 0.9) 0%, rgba(255, 170, 200, 0) 100%),
+    radial-gradient(45% 50% at 90% 100%, rgba(236, 190, 240, 0.9) 0%, rgba(236, 190, 240, 0) 100%),
+    linear-gradient(180deg, #bcd4ef 0%, #c4d6f0 60%, #dbd0ef 100%);
+}
+
+/* Warm ember glow top-left */
+.ember {
+  background:
+    radial-gradient(28% 22% at 12% 0%, rgba(255, 112, 60, 0.95) 0%, rgba(255, 112, 60, 0) 100%),
+    radial-gradient(45% 35% at 30% 0%, rgba(255, 165, 150, 0.9) 0%, rgba(255, 165, 150, 0) 100%),
+    radial-gradient(40% 40% at 85% 0%, rgba(242, 176, 226, 0.85) 0%, rgba(242, 176, 226, 0) 100%),
+    linear-gradient(180deg, #d5d0ef 0%, #c1d6ef 45%, #bad3ee 100%);
+}

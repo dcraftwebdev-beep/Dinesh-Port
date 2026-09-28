@@ -1,0 +1,339 @@
+.stage {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  font-family: var(--font-sans);
+  color: #121826;
+}
+
+.strip {
+  position: absolute;
+  left: -150px;
+  top: 232px;
+  display: flex;
+  gap: 26px;
+  transform: rotate(-26deg) scale(1.12);
+  transform-origin: 0 0;
+}
+
+.phone {
+  position: relative;
+  flex-shrink: 0;
+  width: 212px;
+  height: 452px;
+  padding: 12px 14px;
+  border-radius: 30px;
+  background: #fff;
+  box-shadow:
+    0 24px 50px -20px rgba(90, 40, 90, 0.35),
+    0 0 0 1px rgba(255, 255, 255, 0.6);
+  overflow: hidden;
+}
+
+/* Status bar */
+.status {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2px 8px 0;
+  font-size: 8px;
+  font-weight: 600;
+}
+
+.statusIcons {
+  display: flex;
+  gap: 3px;
+}
+
+.statusIcons i {
+  width: 8px;
+  height: 5px;
+  border-radius: 1px;
+  background: #121826;
+}
+
+.battery {
+  width: 12px !important;
+}
+
+/* Artwork */
+.art {
+  position: relative;
+  height: 182px;
+  margin-top: 14px;
+  border-radius: 14px;
+  overflow: hidden;
+}
+
+.artShort {
+  height: 164px;
+}
+
+.dune {
+  background:
+    radial-gradient(55% 50% at 35% 55%, rgba(35, 45, 30, 0.85) 0%, transparent 70%),
+    radial-gradient(60% 40% at 60% 30%, #f0a24f 0%, transparent 70%),
+    linear-gradient(160deg, #cfe0c2 0%, #7f9a64 45%, #d97a3a 100%);
+}
+
+.ember {
+  background:
+    radial-gradient(60% 55% at 55% 40%, #ff7a2e 0%, transparent 70%),
+    linear-gradient(170deg, #f58a3a 0%, #e1502a 50%, #b8331f 100%);
+}
+
+.silhouette {
+  position: absolute;
+  left: 18%;
+  bottom: -10%;
+  width: 62%;
+  height: 90%;
+  border-radius: 48% 52% 30% 30%;
+  background: radial-gradient(60% 60% at 50% 40%, #3b1d18 0%, #1c0e0c 80%);
+  filter: blur(1px);
+  transform: rotate(-8deg);
+}
+
+.expand {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  display: grid;
+  place-items: center;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  color: #fff;
+  font-size: 8px;
+}
+
+.bloom {
+  background:
+    radial-gradient(14% 22% at 50% 38%, #ff7a1a 0%, rgba(255, 122, 26, 0) 100%),
+    radial-gradient(26% 30% at 52% 36%, rgba(255, 160, 60, 0.8) 0%, rgba(255, 160, 60, 0) 100%),
+    linear-gradient(90deg, transparent 49%, rgba(120, 140, 60, 0.6) 50%, transparent 51%) 0 60% / 100% 50% no-repeat,
+    linear-gradient(160deg, #fbf5d8 0%, #f3ecbf 55%, #e9e2b0 100%);
+}
+
+.trackRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 16px;
+  padding-inline: 4px;
+}
+
+.trackTitle {
+  font-size: 10px;
+  font-weight: 600;
+}
+
+.trackArtist {
+  font-size: 7px;
+  color: #8a8f99;
+}
+
+.like {
+  font-size: 12px;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 18px;
+  padding-inline: 6px;
+  font-size: 12px;
+}
+
+.play {
+  font-size: 16px;
+}
+
+.progress {
+  margin-top: 16px;
+  padding-inline: 4px;
+}
+
+.progressTrack {
+  height: 3px;
+  border-radius: 3px;
+  background: #e7e8ec;
+}
+
+.progressTrack span {
+  position: relative;
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  background: #121826;
+}
+
+.progressTrack span::after {
+  content: '';
+  position: absolute;
+  right: -4px;
+  top: -2.5px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #121826;
+}
+
+.progressTimes {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4px;
+  font-size: 6px;
+  color: #8a8f99;
+}
+
+.tabBar {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+  font-size: 5.5px;
+  color: #6c7280;
+}
+
+.tabBar span {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.tabBar i {
+  width: 10px;
+  height: 10px;
+  border: 1.2px solid currentColor;
+  border-radius: 3px;
+}
+
+.tabActive {
+  color: #121826;
+}
+
+/* Lyrics */
+.lyricsLabel {
+  margin-top: 14px;
+  font-size: 8px;
+  font-weight: 500;
+  color: #5b6170;
+}
+
+.lyrics {
+  margin-top: 10px;
+  font-size: 11.5px;
+  font-weight: 600;
+  line-height: 1.45;
+  letter-spacing: -0.01em;
+}
+
+.active {
+  color: #121826;
+}
+
+.mixed {
+  color: #121826;
+  background: linear-gradient(90deg, #121826 45%, #b6bac3 46%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.faded {
+  color: #c4c7ce;
+}
+
+/* Search */
+.search {
+  padding: 7px 10px;
+  border-radius: 9px;
+  background: #f1f2f4;
+  font-size: 8px;
+  color: #3b4050;
+}
+
+.results {
+  margin-top: 10px;
+}
+
+.results li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 2px;
+}
+
+.thumb {
+  width: 22px;
+  height: 22px;
+  border-radius: 5px;
+}
+
+.sunset {
+  background: linear-gradient(135deg, #ff9b54, #c83c50);
+}
+.ocean {
+  background: linear-gradient(135deg, #2d6b8c, #13253f);
+}
+.sand {
+  background: linear-gradient(135deg, #e7c7a2, #b88263);
+}
+.sky {
+  background: linear-gradient(135deg, #9fd1f0, #3f7fb8);
+}
+.rose {
+  background: linear-gradient(135deg, #f5c2c2, #c24848);
+}
+.night {
+  background: linear-gradient(135deg, #5a5a6a, #1b1b26);
+}
+
+.resultTitle {
+  font-size: 7.5px;
+  font-weight: 600;
+}
+
+.resultArtist {
+  font-size: 5.5px;
+  color: #8a8f99;
+}
+
+.keyboard {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 8px 4px 22px;
+  background: #d9dbe0;
+}
+
+.keyRow {
+  display: flex;
+  justify-content: center;
+  gap: 3px;
+  margin-bottom: 5px;
+}
+
+.key {
+  display: grid;
+  place-items: center;
+  width: 16px;
+  height: 22px;
+  border-radius: 4px;
+  background: #fff;
+  font-size: 8px;
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.2);
+}
+
+.keyWide {
+  width: 32px;
+  font-size: 6px;
+}
+
+.keySpace {
+  width: 100px;
+}

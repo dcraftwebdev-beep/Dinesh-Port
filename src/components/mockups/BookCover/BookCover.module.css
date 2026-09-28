@@ -1,0 +1,169 @@
+/* Illustrated book covers, drawn on a 107 × 146 canvas */
+.book {
+  width: 100%;
+  position: relative;
+  height: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.grid {
+  background:
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.18) 0 1px, transparent 1px 12px),
+    repeating-linear-gradient(0deg, rgba(255, 255, 255, 0.18) 0 1px, transparent 1px 12px),
+    linear-gradient(180deg, #ef7b43, #ea6a32);
+}
+
+.gridTitle,
+.gridSub {
+  position: absolute;
+  left: 9px;
+  font-size: 10px;
+  font-weight: 600;
+  color: #7a2a0d;
+  opacity: 0.8;
+}
+
+.gridTitle {
+  top: 34px;
+}
+
+.gridSub {
+  top: 70px;
+}
+
+.geometric {
+  background:
+    repeating-radial-gradient(circle at 30% 30%, #2b2b2b 0 2px, #e6e6e6 2px 4px),
+    #777;
+  filter: grayscale(1) contrast(1.1);
+}
+
+.geometric::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(135deg, rgba(0, 0, 0, 0.35) 0 3px, transparent 3px 7px);
+  mix-blend-mode: multiply;
+}
+
+.geoLabel {
+  position: absolute;
+  left: 50%;
+  top: 52%;
+  z-index: 1;
+  transform: translate(-50%, -50%);
+  padding: 7px 5px;
+  border: 1px solid #333;
+  background: #f4f4f4;
+  font-size: 6.5px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+.learn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 8px;
+  background: #f4c330;
+  color: #b3421f;
+}
+
+.learnTitle {
+  font-family: 'Arial Narrow', Impact, sans-serif;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 1;
+  letter-spacing: 0.02em;
+  transform: scaleY(1.15);
+}
+
+.learnSub {
+  font-size: 4.5px;
+  font-weight: 700;
+  margin-block: 2px;
+}
+
+.head {
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  width: 62px;
+  height: 78px;
+  transform: translateX(-50%);
+  border-radius: 46% 54% 20% 20%;
+  background: #3f8fc4;
+}
+
+.brain {
+  position: absolute;
+  left: 50%;
+  top: 22px;
+  width: 26px;
+  height: 26px;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: repeating-radial-gradient(circle, #f06c43 0 2px, #f6b39a 2px 4px);
+}
+
+.popart {
+  background: #f1f0ee;
+}
+
+.popTitle {
+  position: absolute;
+  top: 6px;
+  width: 100%;
+  text-align: center;
+  font-family: Georgia, 'Times New Roman', serif;
+  font-size: 15px;
+  letter-spacing: 0.02em;
+}
+
+.lips {
+  position: absolute;
+  left: 50%;
+  top: 60px;
+  width: 78px;
+  height: 44px;
+  transform: translateX(-50%) rotate(-12deg);
+  border-radius: 50% 50% 46% 46% / 55% 55% 45% 45%;
+  background:
+    linear-gradient(180deg, transparent 46%, #fff 47% 53%, transparent 54%),
+    radial-gradient(70% 90% at 50% 50%, #e2202a 0%, #b5121c 100%);
+}
+
+.lips::after {
+  content: '';
+  position: absolute;
+  left: 38%;
+  top: 40%;
+  width: 44px;
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #ddd, #fff);
+  transform: rotate(40deg);
+  transform-origin: left;
+}
+
+.graphic {
+  background:
+    linear-gradient(90deg, #e33 0 20%, #2a74c9 20% 40%, #f2c533 40% 60%, #1d9a5b 60% 80%, #e8702a 80%) 0 0 / 100% 28px no-repeat,
+    linear-gradient(90deg, #7a3fb0 0 25%, #f06292 25% 50%, #1e88e5 50% 75%, #fdd835 75%) 0 100% / 100% 28px no-repeat,
+    #f6f1e7;
+}
+
+.graphicTitle {
+  position: absolute;
+  top: 38px;
+  left: 6px;
+  font-family: 'Arial Narrow', Impact, sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: -0.02em;
+  color: #1a1a1a;
+  transform: scaleY(1.3);
+  transform-origin: top left;
+}

@@ -1,0 +1,91 @@
+.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 11px 12px;
+}
+
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 16px;
+  height: 45px;
+  padding: 5px 16px 5px 5px;
+  border-radius: calc(11px * var(--corner-fallback));
+  corner-shape: superellipse(1.3);
+  background: var(--color-card);
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  color: var(--color-heading);
+  transition: transform 0.3s var(--ease-out);
+}
+
+.chip:hover {
+  transform: translateY(-2px);
+}
+
+.thumb {
+  flex-shrink: 0;
+  width: 40px;
+  height: 35px;
+  border-radius: 5px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #dfe3e8, #c9ced6);
+}
+
+.thumb img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Gradient stand-ins until photos are added */
+.sky {
+  background: linear-gradient(160deg, #6fb0ea 0%, #c8def3 55%, #e8a3b3 100%);
+}
+.paper {
+  background:
+    linear-gradient(135deg, transparent 40%, #e0474c 41% 55%, transparent 56%),
+    linear-gradient(160deg, #f5f1ea, #d9d2c6);
+}
+.blueprint {
+  background:
+    linear-gradient(120deg, transparent 45%, #f28c38 46% 58%, transparent 59%),
+    linear-gradient(160deg, #cfe0f5, #6f96cf);
+}
+.gym {
+  background:
+    linear-gradient(90deg, transparent 18%, #2b2b2b 18% 24%, transparent 24% 76%, #2b2b2b 76% 82%, transparent 82%) 0 50% / 100% 28% no-repeat,
+    linear-gradient(0deg, transparent 46%, #555 46% 54%, transparent 54%),
+    linear-gradient(160deg, #7c7f86 0%, #3b3e45 100%);
+}
+.run {
+  background:
+    radial-gradient(30% 30% at 70% 30%, #ffd9a0 0%, transparent 70%),
+    linear-gradient(170deg, #f4b26b 0%, #e2743f 45%, #5a6f7d 100%);
+}
+.forest {
+  background: linear-gradient(160deg, #2f3b2a 0%, #6b7d3f 45%, #d9a54a 100%);
+}
+.coffee {
+  background:
+    radial-gradient(circle at 50% 42%, #c98b52 0 22%, #f1e3cf 23% 30%, transparent 31%),
+    linear-gradient(180deg, #c7ccd2 0 58%, #aeb4bb 58%);
+}
+.marina {
+  background: linear-gradient(180deg, #f6a661 0%, #f07f58 38%, #3f7fa8 62%, #e7cfa3 100%);
+}
+.music {
+  background:
+    radial-gradient(40% 40% at 50% 60%, rgba(255, 190, 90, 0.9) 0%, transparent 70%),
+    linear-gradient(160deg, #3a1f14 0%, #b4502a 60%, #f0a24a 100%);
+}
+.temple {
+  background:
+    linear-gradient(90deg, transparent 38%, #b0763c 38% 62%, transparent 62%) 50% 100% / 100% 70% no-repeat,
+    linear-gradient(180deg, #f2c27a 0%, #e7a454 55%, #caa274 100%);
+}
+.shogun {
+  background: linear-gradient(160deg, #c8202a 0%, #6d2a22 50%, #2f5b5a 100%);
+}

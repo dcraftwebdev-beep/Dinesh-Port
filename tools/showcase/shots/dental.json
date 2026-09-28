@@ -1,0 +1,220 @@
+{
+  "url": "https://dr-amins.netlify.app/",
+  "label": "dr-amins.netlify.app",
+  "out": "public/projects/dental-care/showcase.mp4",
+  "fps": 60,
+  "shots": [
+    {
+      "do": "goto"
+    },
+    {
+      "do": "hold",
+      "ms": 1200
+    },
+    {
+      "do": "move",
+      "to": "a:has-text(\"Book Your Appointment\")",
+      "ms": 1000
+    },
+    {
+      "do": "hold",
+      "ms": 500
+    },
+    {
+      "do": "scroll",
+      "to": ".about-section",
+      "ms": 2200
+    },
+    {
+      "do": "hold",
+      "ms": 1000
+    },
+    {
+      "do": "scroll",
+      "to": ".services-section",
+      "ms": 2000
+    },
+    {
+      "do": "scroll",
+      "by": 2400,
+      "ms": 4200
+    },
+    {
+      "do": "hold",
+      "ms": 400
+    },
+    {
+      "do": "scroll",
+      "to": ".why-choose-section",
+      "ms": 2200
+    },
+    {
+      "do": "scroll",
+      "by": 1400,
+      "ms": 2800
+    },
+    {
+      "do": "hold",
+      "ms": 400
+    },
+    {
+      "do": "scroll",
+      "to": ".specialists-section",
+      "ms": 2400
+    },
+    {
+      "do": "hold",
+      "ms": 400
+    },
+    {
+      "do": "zoom",
+      "scale": 1.4,
+      "on": "text=Dr. Sarah Jenkins",
+      "ms": 900
+    },
+    {
+      "do": "hold",
+      "ms": 900
+    },
+    {
+      "do": "zoom",
+      "scale": 1,
+      "ms": 700
+    },
+    {
+      "do": "scroll",
+      "to": ".reviews-section",
+      "ms": 2200
+    },
+    {
+      "do": "hold",
+      "ms": 1400
+    },
+    {
+      "do": "scroll",
+      "to": 0,
+      "ms": 2600
+    },
+    {
+      "do": "hold",
+      "ms": 400
+    },
+    {
+      "do": "zoom",
+      "scale": 1.6,
+      "on": "a[href=\"/booking\"]:has-text(\"Book Appointment\")",
+      "ms": 900
+    },
+    {
+      "do": "click",
+      "on": "a[href=\"/booking\"]:has-text(\"Book Appointment\")",
+      "wait": 1500
+    },
+    {
+      "do": "zoom",
+      "scale": 1,
+      "ms": 700
+    },
+    {
+      "do": "hold",
+      "ms": 900
+    },
+    {
+      "do": "move",
+      "to": "button:has-text(\"Cosmetic\")",
+      "ms": 900
+    },
+    {
+      "do": "hold",
+      "ms": 300
+    },
+    {
+      "do": "click",
+      "on": "button:has-text(\"Select Service\") >> nth=2",
+      "wait": 900
+    },
+    {
+      "do": "zoom",
+      "scale": 1.45,
+      "on": "text=Booking Summary",
+      "ms": 900
+    },
+    {
+      "do": "hold",
+      "ms": 1300
+    },
+    {
+      "do": "zoom",
+      "scale": 1,
+      "ms": 700
+    },
+    {
+      "do": "click",
+      "on": "button:has-text(\"Continue\")",
+      "wait": 1500
+    },
+    {
+      "do": "hold",
+      "ms": 700
+    },
+    {
+      "do": "click",
+      "on": "button:text-is(\"29\")",
+      "wait": 600
+    },
+    {
+      "do": "click",
+      "on": "button:text-is(\"11:00 AM\")",
+      "wait": 700
+    },
+    {
+      "do": "zoom",
+      "scale": 1.45,
+      "on": "text=Booking Summary",
+      "ms": 900
+    },
+    {
+      "do": "hold",
+      "ms": 1200
+    },
+    {
+      "do": "zoom",
+      "scale": 1,
+      "ms": 700
+    },
+    {
+      "do": "click",
+      "on": "button:has-text(\"Continue\")",
+      "wait": 1500
+    },
+    {
+      "do": "hold",
+      "ms": 800
+    },
+    {
+      "do": "type",
+      "into": "input[name=\"firstName\"]",
+      "text": "Jane"
+    },
+    {
+      "do": "type",
+      "into": "input[name=\"lastName\"]",
+      "text": "Doe"
+    },
+    {
+      "do": "type",
+      "into": "input[name=\"email\"]",
+      "text": "jane@example.com"
+    },
+    {
+      "do": "zoom",
+      "scale": 1.4,
+      "on": "button:has-text(\"Confirm Appointment\")",
+      "ms": 1000
+    },
+    {
+      "do": "hold",
+      "ms": 2200
+    }
+  ]
+}

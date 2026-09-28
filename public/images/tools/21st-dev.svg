@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28" fill="none">
+  <!-- 21st.dev mark, redrawn as a vector from the original favicon -->
+  <rect width="28" height="28" fill="#0034FF"/>
+  <g fill="#F4F4F2">
+    <path d="M4 8.8h8v5.1H4z"/>
+    <path d="M4 19.2 8.6 15.2H17v8.4H4z"/>
+    <path d="M12.3 3.9h11.5v14.9h-6.6V8.8h-4.1v10h-.8z"/>
+  </g>
+</svg>

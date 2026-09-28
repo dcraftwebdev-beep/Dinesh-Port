@@ -1,0 +1,50 @@
+.card {
+  --x: 50%;
+  --y: 50%;
+  position: relative;
+  width: 72%;
+  padding: 28px 26px;
+  border-radius: 20px;
+  background:
+    radial-gradient(260px circle at var(--x) var(--y), rgba(139, 108, 255, 0.28), transparent 60%),
+    #0b1522;
+  color: #fff;
+  overflow: hidden;
+}
+
+/* Border that lights up only near the cursor */
+.card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  padding: 1px;
+  border-radius: inherit;
+  background: radial-gradient(180px circle at var(--x) var(--y), rgba(190, 170, 255, 0.9), rgba(255, 255, 255, 0.08) 70%);
+  -webkit-mask:
+    linear-gradient(#000 0 0) content-box,
+    linear-gradient(#000 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+.eyebrow {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #a9a0ff;
+}
+
+.title {
+  margin-top: 10px;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.text {
+  margin-top: 6px;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+}

@@ -1,0 +1,59 @@
+.card {
+  composes: card from '../shared.module.css';
+  margin: 0;
+  padding: 28px 24px;
+}
+
+.mark {
+  width: 22px;
+  height: 15px;
+  color: var(--color-heading);
+}
+
+.text {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #2c3440;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-top: 28px;
+}
+
+.avatar {
+  display: grid;
+  place-items: center;
+  flex-shrink: 0;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  object-fit: cover;
+  background: linear-gradient(145deg, #f3d9c6, #d9b49b);
+  font-size: 15px;
+  font-weight: 700;
+  color: #5b3b28;
+}
+
+.name {
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-heading);
+}
+
+.role {
+  margin-top: 2px;
+  font-size: 18px;
+  color: var(--color-body);
+}
+
+@media (max-width: 809px) {
+  .text,
+  .name,
+  .role {
+    font-size: 16px;
+  }
+}

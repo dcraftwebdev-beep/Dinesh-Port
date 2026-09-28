@@ -1,0 +1,325 @@
+.window {
+  position: absolute;
+  left: 40px;
+  top: 48px;
+  width: 587px;
+  height: 404px;
+  display: grid;
+  grid-template-columns: 170px 1fr 158px;
+  border-radius: 14px;
+  background: #fff;
+  box-shadow: 0 24px 60px -24px rgba(30, 40, 90, 0.45);
+  overflow: hidden;
+  font-family: var(--font-sans);
+  color: #04111f;
+}
+
+/* ——— Chat list ——— */
+.list {
+  display: flex;
+  flex-direction: column;
+  padding: 12px 8px;
+  border-right: 1px solid #eceef1;
+}
+
+.listTitle {
+  margin: 0 4px 8px;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.filters {
+  display: flex;
+  gap: 4px;
+  margin: 0 4px 8px;
+}
+
+.filters span {
+  padding: 3px 7px;
+  border-radius: 999px;
+  background: #f1f2f4;
+  font-size: 6.5px;
+  font-weight: 600;
+  color: #717880;
+}
+
+.filters .filterActive {
+  background: #e3f6ec;
+  color: #127a47;
+}
+
+.chat {
+  position: relative;
+  display: flex;
+  gap: 7px;
+  padding: 7px 6px;
+  border-radius: 9px;
+}
+
+.chatActive {
+  background: #f4f5f7;
+}
+
+.avatar {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: #dfe7f1;
+  font-size: 9px;
+  font-weight: 700;
+  color: #3d4652;
+}
+
+.chatText {
+  flex: 1;
+  min-width: 0;
+}
+
+.chatText p {
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+}
+
+.chatText em {
+  font-style: normal;
+  font-size: 6px;
+  color: #9aa0a6;
+}
+
+.chatText > span {
+  display: block;
+  margin: 1px 0 3px;
+  font-size: 6.5px;
+  color: #717880;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.unread {
+  position: absolute;
+  right: 6px;
+  top: 20px;
+  display: grid;
+  place-items: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #16a064;
+  font-size: 6px;
+  font-style: normal;
+  font-weight: 700;
+  color: #fff;
+}
+
+.tag {
+  display: inline-block;
+  padding: 1px 5px;
+  border-radius: 4px;
+  font-size: 6px;
+  font-weight: 700;
+}
+
+.blue {
+  background: #e8efff;
+  color: #1d5bd8;
+}
+
+.purple {
+  background: #efe9fd;
+  color: #5a2ee6;
+}
+
+.green {
+  background: #e3f6ec;
+  color: #127a47;
+}
+
+.orange {
+  background: #fff2e5;
+  color: #b25a00;
+}
+
+.grey {
+  background: #f1f2f4;
+  color: #717880;
+}
+
+/* ——— Thread ——— */
+.thread {
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  background: #f5f1ea;
+}
+
+.threadHead {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 9px 12px;
+  background: #fff;
+  border-bottom: 1px solid #eceef1;
+  font-size: 9px;
+}
+
+.messages {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 14px 12px;
+}
+
+.messages p {
+  max-width: 82%;
+  padding: 7px 9px;
+  border-radius: 9px;
+  font-size: 7.5px;
+  line-height: 1.4;
+  box-shadow: 0 1px 1px rgba(4, 17, 31, 0.06);
+}
+
+.them {
+  align-self: flex-start;
+  background: #fff;
+  border-top-left-radius: 3px;
+}
+
+.me {
+  align-self: flex-end;
+  background: #daf5e4;
+  border-top-right-radius: 3px;
+}
+
+.file {
+  font-weight: 600;
+}
+
+.compose {
+  margin: 0 10px 10px;
+  padding: 8px 10px;
+  border-radius: 999px;
+  background: #fff;
+  font-size: 7px;
+  color: #9aa0a6;
+}
+
+/* ——— Chatfollow sidebar ——— */
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 12px 10px;
+  border-left: 1px solid #eceef1;
+}
+
+.sideHead {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  margin-bottom: 4px;
+  font-size: 10px;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 7px;
+  background: #16a064;
+  color: #fff;
+}
+
+.logo svg {
+  width: 64%;
+  height: 64%;
+}
+
+.label {
+  font-size: 6.5px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #9aa0a6;
+}
+
+.stages {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3px;
+}
+
+.stages span {
+  padding: 4px 0;
+  border-radius: 6px;
+  background: #f4f5f7;
+  font-size: 7px;
+  font-weight: 600;
+  color: #717880;
+  text-align: center;
+}
+
+.stages .stageActive {
+  background: #5a2ee6;
+  color: #fff;
+}
+
+.field {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+  border-bottom: 1px solid #f1f2f4;
+  font-size: 7px;
+  color: #717880;
+}
+
+.field b {
+  color: #04111f;
+}
+
+.field .warn {
+  color: #b25a00;
+}
+
+.reminder {
+  padding: 8px;
+  border-radius: 9px;
+  background: #fff7ed;
+  border: 1px solid #fde6cc;
+}
+
+.reminder p {
+  font-size: 6.5px;
+  font-weight: 700;
+  color: #b25a00;
+}
+
+.reminder b {
+  display: block;
+  margin: 2px 0 3px;
+  font-size: 8.5px;
+}
+
+.reminder span {
+  font-size: 6.5px;
+  line-height: 1.35;
+  color: #717880;
+}
+
+.button {
+  margin-top: auto;
+  padding: 7px 0;
+  border-radius: 8px;
+  background: #04111f;
+  font-size: 7.5px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+}

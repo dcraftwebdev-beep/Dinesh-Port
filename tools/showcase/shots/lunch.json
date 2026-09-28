@@ -1,0 +1,45 @@
+{
+  "url": "https://fbl-lunch.vercel.app/",
+  "label": "fbl-lunch.vercel.app · Lunch Register",
+  "out": "tools/showcase/out/lunch-showcase.mp4",
+  "fps": 60,
+  "storageState": "tools/showcase/.auth/lunch.json",
+  "blurEmails": true,
+  "background": ["#f5d3c8", "#efc3d8", "#f4a393"],
+  "shots": [
+    { "do": "goto" },
+    { "do": "click", "on": "button:text-is(\"Lunch Register\")", "silent": true, "wait": 2500 },
+    { "do": "hold", "ms": 1000 },
+
+    { "do": "move", "to": "button:has-text(\"No cooking today\")", "ms": 1000 },
+    { "do": "hold", "ms": 500 },
+    { "do": "zoom", "scale": 1.5, "on": "text=plates to cook today", "ms": 900 },
+    { "do": "hold", "ms": 1500 },
+    { "do": "zoom", "scale": 1, "ms": 700 },
+    { "do": "move", "to": "input[placeholder*=\"biryani\"]", "ms": 900 },
+    { "do": "hold", "ms": 600 },
+
+    { "do": "scroll", "to": 400, "ms": 1800 },
+    { "do": "move", "to": "text=Click any cell to correct a day", "ms": 900 },
+    { "do": "hold", "ms": 400 },
+    { "do": "zoom", "scale": 1.35, "on": "text=Plates / day", "ms": 900 },
+    { "do": "move", "to": "text=24/09", "ms": 1400 },
+    { "do": "hold", "ms": 500 },
+    { "do": "zoom", "scale": 1, "ms": 700 },
+    { "do": "hold", "ms": 400 },
+
+    { "do": "scroll", "to": 1060, "ms": 2200 },
+    { "do": "zoom", "scale": 1.45, "on": "button:has-text(\"Send today\")", "ms": 900 },
+    { "do": "hold", "ms": 1400 },
+    { "do": "zoom", "scale": 1, "ms": 700 },
+    { "do": "click", "on": "button:text-is(\"Last 30 days\")", "wait": 700 },
+    { "do": "move", "to": "button:has-text(\"Download Excel\")", "ms": 900 },
+    { "do": "hold", "ms": 700 },
+    { "do": "zoom", "scale": 1.4, "on": "button:has-text(\"★ default\") >> nth=1", "ms": 1000 },
+    { "do": "hold", "ms": 1400 },
+    { "do": "zoom", "scale": 1, "ms": 700 },
+
+    { "do": "scroll", "to": 0, "ms": 2200 },
+    { "do": "hold", "ms": 1000 }
+  ]
+}

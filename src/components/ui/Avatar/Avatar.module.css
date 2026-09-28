@@ -1,0 +1,43 @@
+.avatar {
+  display: inline-flex;
+  flex-shrink: 0;
+  overflow: hidden;
+  background: linear-gradient(145deg, #dfe9e6 0%, #c7d6d3 55%, #b6c7cf 100%);
+  box-shadow: 0 1px 2px rgba(15, 20, 30, 0.08);
+}
+
+.lg {
+  width: 72px;
+  height: 72px;
+  border-radius: 18px;
+}
+
+.sm {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+
+.image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.initials {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  height: 100%;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color: #26343a;
+}
+
+.lg .initials {
+  font-size: 1.5rem;
+}
+
+.sm .initials {
+  font-size: 0.8rem;
+}

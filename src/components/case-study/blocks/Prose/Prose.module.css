@@ -1,0 +1,38 @@
+.prose {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Sub-sections sit further from the block above them */
+.spaced {
+  margin-top: 48px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.25;
+  letter-spacing: -0.025em;
+  color: var(--color-heading);
+}
+
+.text {
+  font-size: 18px;
+  line-height: 1.55;
+  color: var(--color-body);
+}
+
+@media (max-width: 809px) {
+  .spaced {
+    margin-top: 24px;
+  }
+
+  .title {
+    font-size: 22px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,26 @@
+.grid {
+  composes: grid3 from '../shared.module.css';
+}
+
+.card {
+  composes: card from '../shared.module.css';
+  padding-block: 28px;
+}
+
+.value {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.1;
+  letter-spacing: -0.02em;
+  color: var(--color-positive);
+}
+
+.label {
+  composes: cardTitle from '../shared.module.css';
+  margin-top: 24px;
+}
+
+.meta {
+  composes: cardText from '../shared.module.css';
+  margin-top: 8px;
+}

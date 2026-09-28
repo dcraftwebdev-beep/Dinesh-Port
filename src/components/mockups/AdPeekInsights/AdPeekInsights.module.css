@@ -1,0 +1,225 @@
+.window {
+  position: absolute;
+  left: 40px;
+  top: 44px;
+  width: 587px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding: 14px;
+  border-radius: 14px;
+  background: #f7f8fa;
+  box-shadow: 0 24px 60px -24px rgba(30, 40, 90, 0.4);
+  font-family: var(--font-sans);
+  color: #04111f;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 2px 2px 6px;
+}
+
+.head > div {
+  flex: 1;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.sub {
+  margin-top: 2px;
+  font-size: 7.5px;
+  color: #717880;
+}
+
+.pill {
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: #fff;
+  border: 1px solid #e6e8ec;
+  font-size: 7.5px;
+  font-weight: 600;
+  color: #04111f;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  padding: 12px;
+  border-radius: 11px;
+  background: #fff;
+  border: 1px solid #eceef1;
+}
+
+.label {
+  font-size: 8.5px;
+  font-weight: 700;
+}
+
+.label small {
+  margin-left: 4px;
+  font-size: 6.5px;
+  font-weight: 600;
+  color: #16794a;
+}
+
+/* ——— Offer timeline ——— */
+.weeks {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  padding-bottom: 4px;
+  border-bottom: 1px dashed #e6e8ec;
+  font-size: 6.5px;
+  color: #9aa0a6;
+}
+
+.track {
+  position: relative;
+  height: 17px;
+}
+
+.bar {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 0 7px;
+  border-radius: 6px;
+  font-size: 7px;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.blue {
+  background: #e8efff;
+  color: #1d5bd8;
+}
+
+.purple {
+  background: #efe9fd;
+  color: #5a2ee6;
+}
+
+.green {
+  background: #e9f7ef;
+  color: #16794a;
+}
+
+.orange {
+  background: #fff2e5;
+  color: #b25a00;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 0.9fr 1.25fr 1fr;
+  gap: 8px;
+}
+
+/* ——— Hooks ——— */
+.hook {
+  display: grid;
+  grid-template-columns: 58px 1fr 10px;
+  align-items: center;
+  gap: 6px;
+  font-size: 7px;
+  color: #3d4652;
+}
+
+.hook i,
+.winner i {
+  height: 5px;
+  border-radius: 3px;
+  background: #f1f2f4;
+  overflow: hidden;
+}
+
+.hook b,
+.winner b {
+  display: block;
+  height: 100%;
+  border-radius: inherit;
+  background: #5a2ee6;
+}
+
+.hook em,
+.winner em,
+.page em {
+  font-size: 7px;
+  font-style: normal;
+  font-weight: 700;
+  text-align: right;
+}
+
+/* ——— Winners ——— */
+.winner {
+  display: grid;
+  grid-template-columns: 13px 1fr 18px;
+  align-items: center;
+  gap: 6px;
+}
+
+.winner p {
+  margin-bottom: 3px;
+  font-size: 7px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.winner i {
+  display: block;
+}
+
+.winner b {
+  background: #16a064;
+}
+
+.rank {
+  display: grid;
+  place-items: center;
+  width: 13px;
+  height: 13px;
+  border-radius: 4px;
+  background: #f1f2f4;
+  font-size: 6.5px;
+  font-weight: 700;
+}
+
+/* ——— Landing pages ——— */
+.page {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.page p {
+  flex: 1;
+  min-width: 0;
+  font-size: 7px;
+  font-weight: 600;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.page em {
+  color: #717880;
+}
+
+.thumb {
+  flex: none;
+  width: 22px;
+  height: 15px;
+  border-radius: 4px;
+  background: linear-gradient(160deg, #f7efe6, #d9b48f);
+  border: 1px solid #eee3d6;
+}

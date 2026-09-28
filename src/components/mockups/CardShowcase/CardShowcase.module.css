@@ -1,0 +1,46 @@
+.window {
+  position: absolute;
+  left: 41px;
+  top: 50px;
+  width: 585px;
+  height: 400px;
+  padding: 5px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.viewport {
+  height: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.track {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  animation: scroll 18s cubic-bezier(0.65, 0, 0.35, 1) infinite;
+}
+
+/* Pause at the top, glide down to the analytics, pause, glide back */
+@keyframes scroll {
+  0%,
+  12% {
+    transform: translateY(0);
+  }
+  45%,
+  62% {
+    transform: translateY(calc(-100% + 388px));
+  }
+  95%,
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .track {
+    animation: none;
+  }
+}

@@ -1,0 +1,30 @@
+.header {
+  padding-top: 46px;
+}
+
+.inner {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+}
+
+.brand {
+  display: inline-flex;
+  border-radius: 18px;
+  transition: transform 0.35s var(--ease-out);
+}
+
+.brand:hover {
+  transform: rotate(-3deg) scale(1.03);
+}
+
+@media (max-width: 809px) {
+  .header {
+    padding-top: 24px;
+  }
+
+  .inner {
+    flex-direction: column;
+    gap: 28px;
+  }
+}

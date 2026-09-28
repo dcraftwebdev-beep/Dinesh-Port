@@ -1,0 +1,164 @@
+.window {
+  position: absolute;
+  left: 41px;
+  top: 50px;
+  width: 585px;
+  padding: 5px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  font-family: var(--font-sans);
+  color: #0f1a2b;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 225px 1fr;
+  gap: 9px;
+}
+
+.panel {
+  padding: 12px 13px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.label {
+  font-size: 6px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8c95a3;
+}
+
+.hint {
+  font-size: 6px;
+  color: #a1a8b3;
+}
+
+.donut {
+  width: 128px;
+  margin: 8px auto 6px;
+}
+
+.donutValue {
+  font-size: 7.5px;
+  font-weight: 700;
+  fill: #0f1a2b;
+}
+
+.donutLabel {
+  font-size: 4px;
+  fill: #98a0ad;
+}
+
+.legend li {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 2.5px;
+  font-size: 6.5px;
+  color: #6a7382;
+}
+
+.legend i {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  margin-right: 6px;
+  border-radius: 50%;
+}
+
+.legend b {
+  font-weight: 600;
+  color: #0f1a2b;
+}
+
+.total {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.badge {
+  padding: 1.5px 5px;
+  border-radius: 4px;
+  background: #fff0e6;
+  color: #e56a2a;
+  font-size: 5.5px;
+}
+
+.area {
+  width: 100%;
+  margin-top: 10px;
+}
+
+.axis {
+  font-size: 5px;
+  fill: #a1a8b3;
+}
+
+.budgets {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 10px;
+}
+
+.budgetName {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 7px;
+  font-weight: 600;
+}
+
+.budgetName i {
+  display: grid;
+  place-items: center;
+  width: 14px;
+  height: 14px;
+  border-radius: 4px;
+  background: #fff3e6;
+  font-size: 6px;
+  font-style: normal;
+}
+
+.budgetValue {
+  font-size: 7px;
+  font-weight: 600;
+}
+
+.budgetValue em {
+  font-style: normal;
+  font-weight: 400;
+  color: #a1a8b3;
+}
+
+.track {
+  height: 3px;
+  margin-block: 7px 4px;
+  border-radius: 3px;
+  background: #f1f2f4;
+}
+
+.track span {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  background: #f2b92c;
+}

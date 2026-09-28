@@ -1,0 +1,54 @@
+.grid {
+  composes: grid4 from '../shared.module.css';
+  row-gap: 32px;
+}
+
+.head {
+  composes: card from '../shared.module.css';
+  padding: 18px 20px;
+}
+
+.index {
+  composes: index from '../shared.module.css';
+}
+
+.title {
+  composes: cardTitle from '../shared.module.css';
+  margin-top: 6px;
+  font-size: 18px;
+}
+
+.row {
+  padding-inline: 4px;
+  margin-top: 24px;
+}
+
+.tag {
+  display: inline-block;
+  padding: 3px 9px;
+  border-radius: 6px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.goals {
+  background: #ece8ff;
+  color: #5a2ee6;
+}
+
+.pains {
+  background: #e2f6e8;
+  color: #168a2a;
+}
+
+.needs {
+  background: #e3eeff;
+  color: #2f6bd6;
+}
+
+.text {
+  margin-top: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--color-body);
+}

@@ -1,0 +1,298 @@
+.window {
+  position: absolute;
+  left: 42px;
+  top: 51px;
+  width: 584px;
+  padding: 6px;
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.55);
+  border: 1px solid rgba(255, 255, 255, 0.8);
+  box-shadow: 0 20px 50px -20px rgba(30, 50, 100, 0.35);
+  font-family: var(--font-sans);
+  color: #0f1a2b;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* ——— Balance card ——— */
+.balanceCard {
+  padding: 16px 16px 12px;
+  border-radius: 11px;
+  background: linear-gradient(180deg, #1b2e4b 0%, #142640 100%);
+  color: #fff;
+}
+
+.eyebrow {
+  font-size: 6.5px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8ea3c0;
+}
+
+.amount {
+  margin-top: 5px;
+  font-size: 22px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+.of {
+  margin-left: 6px;
+  font-size: 7.5px;
+  font-weight: 400;
+  letter-spacing: 0;
+  color: #7f93b0;
+}
+
+.cardIcon {
+  display: grid;
+  place-items: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.cardIcon span {
+  width: 10px;
+  height: 7px;
+  border: 1px solid #a6b6cc;
+  border-radius: 1.5px;
+}
+
+.creditRow {
+  margin-top: 12px;
+  font-size: 7px;
+  color: #8ea3c0;
+}
+
+.strong {
+  color: #fff;
+  font-weight: 600;
+}
+
+.track {
+  height: 3px;
+  margin-top: 4px;
+  border-radius: 3px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.fill {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, #3f7de8, #5a9bff);
+}
+
+.noteRow {
+  margin-top: 16px;
+  font-size: 7.5px;
+  color: #a6b5ca;
+}
+
+.payButton {
+  padding: 6px 12px;
+  border-radius: 5px;
+  background: #fff;
+  color: #13233a;
+  font-size: 7px;
+  font-weight: 600;
+}
+
+.stats {
+  display: flex;
+  gap: 26px;
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.statLabel {
+  font-size: 5.5px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #7f93b0;
+}
+
+.statValue {
+  margin-top: 2px;
+  font-size: 7.5px;
+  font-weight: 600;
+}
+
+/* ——— Lower panels ——— */
+.lower {
+  display: grid;
+  grid-template-columns: 224px 1fr;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.panel {
+  padding: 12px 12px 10px;
+  border-radius: 10px;
+  background: #fff;
+  min-height: 204px;
+}
+
+.panelTitle {
+  font-size: 6px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8c95a3;
+}
+
+.hint {
+  font-size: 6px;
+  color: #b3b9c3;
+}
+
+.spend {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.badge {
+  padding: 1.5px 5px;
+  border-radius: 4px;
+  background: #fff0e6;
+  color: #e56a2a;
+  font-size: 5.5px;
+  font-weight: 600;
+}
+
+.chart {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  height: 88px;
+  margin-top: 10px;
+  padding-inline: 4px;
+}
+
+.avgLine {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 38px;
+  border-top: 1px dashed #dde2ea;
+}
+
+.barCol {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+  z-index: 1;
+}
+
+.bar {
+  width: 12px;
+  border-radius: 2px;
+  background: #d9dfe8;
+}
+
+.barDark {
+  background: #1d2e47;
+}
+
+.barLabel {
+  font-size: 5px;
+  color: #a1a8b3;
+}
+
+.legend {
+  margin-top: 14px;
+  font-size: 5.5px;
+  color: #8c95a3;
+}
+
+.legend i {
+  display: inline-block;
+  width: 4px;
+  height: 4px;
+  margin: 0 2px 0 4px;
+  border-radius: 50%;
+  vertical-align: middle;
+}
+
+.legend i:first-child {
+  margin-left: 0;
+}
+
+.dotDark {
+  background: #1d2e47;
+}
+
+.dotLight {
+  background: #d4dae3;
+}
+
+.activity {
+  margin-top: 8px;
+}
+
+.activityItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  height: 35px;
+}
+
+.merchantIcon {
+  width: 16px;
+  height: 16px;
+  border-radius: 5px;
+}
+
+.orange {
+  background: #fff1e6 radial-gradient(circle, #f59e5b 22%, transparent 25%);
+}
+.blue {
+  background: #eaf1fe radial-gradient(circle, #5b8ef5 22%, transparent 25%);
+}
+.grey {
+  background: #f1f2f4 radial-gradient(circle, #8f96a1 22%, transparent 25%);
+}
+.green {
+  background: #e8f7ee radial-gradient(circle, #3fb56e 22%, transparent 25%);
+}
+.red {
+  background: #fdecee radial-gradient(circle, #ea5364 22%, transparent 25%);
+}
+
+.merchant {
+  flex: 1;
+}
+
+.merchantName {
+  font-size: 7px;
+  font-weight: 600;
+  color: #1a2536;
+}
+
+.merchantMeta {
+  font-size: 5.5px;
+  color: #a1a8b3;
+}
+
+.txn {
+  text-align: right;
+}
+
+.chevron {
+  font-size: 7px;
+  color: #b3b9c3;
+}

@@ -1,0 +1,27 @@
+.shell {
+  position: relative;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  isolation: isolate;
+}
+
+/* Soft violet aurora behind the header, fading into the page background */
+.glow {
+  position: absolute;
+  inset: 0 0 auto 0;
+  height: 640px;
+  z-index: -1;
+  pointer-events: none;
+  background:
+    radial-gradient(38% 55% at 50% -8%, rgba(150, 110, 255, 0.55) 0%, rgba(150, 110, 255, 0) 100%),
+    radial-gradient(32% 70% at 100% 0%, rgba(128, 118, 255, 0.75) 0%, rgba(128, 118, 255, 0) 100%),
+    radial-gradient(45% 55% at 78% 12%, rgba(178, 160, 255, 0.55) 0%, rgba(178, 160, 255, 0) 100%),
+    radial-gradient(30% 40% at 62% 38%, rgba(214, 196, 255, 0.35) 0%, rgba(214, 196, 255, 0) 100%);
+  -webkit-mask-image: linear-gradient(to bottom, #000 40%, transparent 100%);
+  mask-image: linear-gradient(to bottom, #000 40%, transparent 100%);
+}
+
+.main {
+  flex: 1;
+}

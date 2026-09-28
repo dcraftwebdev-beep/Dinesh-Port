@@ -1,0 +1,277 @@
+.window {
+  position: absolute;
+  left: 41px;
+  top: 40px;
+  width: 585px;
+  height: 500px;
+  padding: 5px;
+  border-radius: 14px;
+  background: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.85);
+  overflow: hidden;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  font-family: var(--font-sans);
+  color: #0f1a2b;
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 284px 1fr;
+  gap: 9px;
+}
+
+/* ——— Credit card ——— */
+.card {
+  display: flex;
+  flex-direction: column;
+  height: 182px;
+  padding: 16px 15px 12px;
+  border-radius: 11px;
+  background:
+    radial-gradient(60% 70% at 85% 25%, rgba(70, 100, 160, 0.35) 0%, transparent 70%),
+    radial-gradient(50% 60% at 10% 90%, rgba(60, 90, 150, 0.25) 0%, transparent 70%),
+    linear-gradient(160deg, #1c2d49 0%, #14233b 100%);
+  color: #fff;
+}
+
+.cardRow {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 8px;
+  font-weight: 600;
+  color: #dfe6f1;
+}
+
+.brand i {
+  width: 13px;
+  height: 13px;
+  border-radius: 4px;
+  background: rgba(255, 255, 255, 0.12) radial-gradient(circle, #fff 18%, transparent 22%);
+}
+
+.network {
+  display: flex;
+}
+
+.network i {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #eb3d3d;
+}
+
+.network i + i {
+  margin-left: -6px;
+  background: #f5b82e;
+  mix-blend-mode: screen;
+}
+
+.chip {
+  width: 21px;
+  height: 16px;
+  margin-top: auto;
+  border-radius: 3px;
+  background: linear-gradient(135deg, #f3d77a, #d7ae3d);
+}
+
+.number {
+  margin-top: 10px;
+  margin-bottom: 12px;
+  font-size: 9px;
+  letter-spacing: 0.18em;
+  color: #c6cfdc;
+}
+
+.cardLabel {
+  font-size: 4.5px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #7f8ea6;
+}
+
+.cardValue {
+  margin-top: 1px;
+  font-size: 6.5px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.visa {
+  font-size: 12px;
+  font-weight: 800;
+  font-style: italic;
+  letter-spacing: 0.02em;
+}
+
+/* ——— Side panels ——— */
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.panel {
+  padding: 11px 12px;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.label {
+  margin-bottom: 7px;
+  font-size: 6px;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #8c95a3;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.muted {
+  font-size: 7px;
+  color: #6a7382;
+}
+
+.faint {
+  font-size: 6.5px;
+  color: #a1a8b3;
+}
+
+.value {
+  font-size: 7px;
+  font-weight: 600;
+  color: #1a2536;
+}
+
+.green {
+  font-size: 6.5px;
+  font-weight: 600;
+  color: #22b45a;
+}
+
+.value.green {
+  font-size: 7px;
+}
+
+.track {
+  height: 2.5px;
+  margin-block: 6px 7px;
+  border-radius: 3px;
+  background: #eef0f3;
+}
+
+.track span {
+  display: block;
+  height: 100%;
+  border-radius: 3px;
+  background: #3d7cf0;
+}
+
+.statusRow {
+  display: flex;
+  justify-content: space-between;
+  padding-block: 5px;
+  border-top: 1px solid #f1f2f4;
+}
+
+.statusRow:first-of-type {
+  border-top: 0;
+}
+
+/* ——— Actions & controls ——— */
+.actions {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+}
+
+.action {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 9px 0;
+  border-radius: 8px;
+  background: #fff;
+  font-size: 6px;
+  color: #6a7382;
+}
+
+.action i {
+  width: 9px;
+  height: 9px;
+  border: 1px solid currentColor;
+  border-radius: 2.5px;
+}
+
+.actionActive {
+  background: #3d7cf0;
+  color: #fff;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 38px;
+  border-top: 1px solid #f1f2f4;
+}
+
+.control:first-of-type {
+  border-top: 0;
+}
+
+.controlTitle {
+  font-size: 7.5px;
+  font-weight: 600;
+}
+
+.controlText {
+  font-size: 5.5px;
+  color: #98a0ad;
+}
+
+.toggle {
+  position: relative;
+  width: 22px;
+  height: 12px;
+  border-radius: 12px;
+  background: #e3e6ea;
+}
+
+.toggle::after {
+  content: '';
+  position: absolute;
+  top: 2px;
+  left: 2px;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.on {
+  background: #3d7cf0;
+}
+
+.on::after {
+  left: 12px;
+}

@@ -1,0 +1,15 @@
+{
+  "url": "https://dr-amins.netlify.app/",
+  "label": "dr-amins.netlify.app",
+  "out": "tools/showcase/out/test.mp4",
+  "fps": 30,
+  "shots": [
+    { "do": "goto" },
+    { "do": "hold", "ms": 800 },
+    { "do": "move", "to": "a:has-text(\"Book Your Appointment\")", "ms": 800 },
+    { "do": "scroll", "to": 690, "ms": 1500 },
+    { "do": "zoom", "scale": 1.5, "ms": 700 },
+    { "do": "hold", "ms": 600 },
+    { "do": "zoom", "scale": 1, "ms": 600 }
+  ]
+}

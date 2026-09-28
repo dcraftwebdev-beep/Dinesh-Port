@@ -1,0 +1,59 @@
+.scene {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  perspective: 800px;
+}
+
+.card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  width: 64%;
+  aspect-ratio: 1.586;
+  padding: 18px 20px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #5b3df5 0%, #8b6cff 45%, #ff8f7a 100%);
+  color: #fff;
+  overflow: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.5s cubic-bezier(0.22, 1, 0.36, 1), box-shadow 0.5s ease;
+  box-shadow: 0 18px 40px -18px rgba(60, 30, 140, 0.6);
+}
+
+.active {
+  transition-duration: 0.12s;
+  box-shadow: 0 30px 60px -20px rgba(60, 30, 140, 0.7);
+}
+
+.chip {
+  width: 34px;
+  height: 26px;
+  border-radius: 5px;
+  background: linear-gradient(135deg, #f7df9c, #d4a93f);
+}
+
+.number {
+  margin-top: auto;
+  font-size: 15px;
+  letter-spacing: 0.12em;
+  font-variant-numeric: tabular-nums;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  font-size: 11px;
+  letter-spacing: 0.1em;
+  opacity: 0.85;
+}
+
+.shine {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at var(--gx) var(--gy), rgba(255, 255, 255, 0.45), transparent 45%);
+  mix-blend-mode: soft-light;
+  pointer-events: none;
+}
