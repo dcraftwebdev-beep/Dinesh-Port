@@ -53,6 +53,12 @@
   background: #eef0f3;
 }
 
+/* When a parent crops the screen, keep the chosen side of the recording in view */
+.screen > video,
+.screen > img {
+  object-position: var(--focus, top);
+}
+
 .image {
   display: block;
   width: 100%;

@@ -1,12 +1,13 @@
 // Case study: Media Boostrs — agency website
 const SCREEN = 1920 / 947;
+const DEMO = 1680 / 926; // scripted showcase recording (tools/showcase)
 
 export default {
   intro:
     'I designed and developed the website for Media Boostrs, a full-service digital marketing agency. It’s a bold, conversion focused site that explains their services clearly and turns visitors into enquiries.',
   cover: {
     theme: 'sky',
-    media: { type: 'image', src: '/projects/media-boostrs/hero.webp', url: 'mediaboostrs.com', ratio: SCREEN },
+    media: { type: 'video', src: '/projects/media-boostrs/website-demo.mp4', poster: '/projects/media-boostrs/website-demo-poster.webp', url: 'mediaboostrs.com', ratio: DEMO },
   },
   facts: [
     { label: 'Role', value: 'Design & Frontend Development' },
@@ -26,8 +27,8 @@ export default {
       blocks: [
         {
           type: 'media',
-          browser: { type: 'image', src: '/projects/media-boostrs/hero.webp', url: 'mediaboostrs.com', ratio: SCREEN },
-          caption: 'Homepage hero with a rotating slider with a clear value proposition and primary call to action.',
+          browser: { type: 'video', src: '/projects/media-boostrs/website-demo.mp4', poster: '/projects/media-boostrs/website-demo-poster.webp', url: 'mediaboostrs.com', ratio: DEMO },
+          caption: 'Homepage tour: the hero, services, the campaigns portfolio with filters, industries, client results, the latest articles and the strategy session form.',
         },
       ],
     },

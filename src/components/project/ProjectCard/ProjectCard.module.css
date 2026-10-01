@@ -3,7 +3,7 @@
 }
 
 .media {
-  border-radius: var(--radius-lg);
+  border-radius: 24px;
   overflow: hidden;
   transform: translateZ(0);
 }
@@ -21,7 +21,7 @@
   align-items: baseline;
   justify-content: space-between;
   gap: var(--space-4);
-  margin-top: 10px;
+  margin-top: 14px;
 }
 
 .title,
@@ -59,7 +59,7 @@
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 809px) {
   .meta {
     flex-direction: column;
     gap: 2px;

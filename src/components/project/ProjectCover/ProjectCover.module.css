@@ -19,6 +19,26 @@
   width: 100%;
 }
 
+/* Standard card: the window fills the card with even padding (6% sides, 10% top and bottom);
+   the recording is cropped slightly at the sides to fit */
+.cover:not(.wide) .stage {
+  inset: 10% 6.25%;
+  display: block;
+  padding: 0;
+}
+
+.cover:not(.wide) .frame {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.cover:not(.wide) .screen {
+  flex: 1;
+  min-height: 0;
+  aspect-ratio: auto !important;
+}
+
 /* Full-width featured card: panoramic, with a narrower window so it stays tall */
 .wide {
   aspect-ratio: 1364 / 620;
@@ -43,7 +63,21 @@
   }
 
   .wide .stage {
-    padding-inline: 4%;
+    inset: 10% 6.25%;
+    display: block;
+    padding: 0;
+  }
+
+  .wide .frame {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  .wide .screen {
+    flex: 1;
+    min-height: 0;
+    aspect-ratio: auto !important;
   }
 
   .wide .mockupStage {

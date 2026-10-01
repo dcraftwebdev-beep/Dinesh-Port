@@ -1,6 +1,7 @@
 // Case study: SVT Constructions — real client website
 const RECORDING = 1208 / 540;
 const SCREEN = 1920 / 947;
+const DEMO = 1680 / 926; // scripted showcase recording (tools/showcase)
 
 export default {
   intro:
@@ -9,10 +10,10 @@ export default {
     theme: 'sunrise',
     media: {
       type: 'video',
-      src: '/projects/svt-constructions/home.mp4',
-      poster: '/projects/svt-constructions/home-poster.webp',
+      src: '/projects/svt-constructions/showcase.mp4',
+      poster: '/projects/svt-constructions/showcase-poster.webp',
       url: 'svtconstructions.com',
-      ratio: RECORDING,
+      ratio: DEMO,
     },
   },
   facts: [
@@ -51,12 +52,12 @@ export default {
           type: 'media',
           browser: {
             type: 'video',
-            src: '/projects/svt-constructions/home.mp4',
-            poster: '/projects/svt-constructions/home-poster.webp',
+            src: '/projects/svt-constructions/showcase.mp4',
+            poster: '/projects/svt-constructions/showcase-poster.webp',
             url: 'svtconstructions.com',
-            ratio: RECORDING,
+            ratio: DEMO,
           },
-          caption: 'Homepage walkthrough: services menu, hero reveal, featured architecture and a projects showcase.',
+          caption: 'Homepage tour: the hero, the about story, each service, the Built by SVT gallery, the four step process and the closing call to action.',
         },
         {
           type: 'cards',

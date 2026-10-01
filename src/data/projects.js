@@ -4,14 +4,12 @@
 // Media files live in /public/projects/<slug>/ (optimised copies; originals are in /source-media).
 
 const SCREEN = 1920 / 947; // website screenshots
-const RECORDING = 1208 / 540; // cropped screen recordings
 
 export const projects = [
   // ——— Client work ———
   {
     slug: 'lunch-register',
     category: 'work',
-    featured: true, // full-width card at the top of Home
     title: 'Automating the office lunch register with a Basecamp bot',
     client: 'Firebrand Labs',
     year: 2026,
@@ -35,10 +33,10 @@ export const projects = [
     theme: 'sunrise',
     media: {
       type: 'video',
-      src: '/projects/svt-constructions/home.mp4',
-      poster: '/projects/svt-constructions/home-poster.webp',
+      src: '/projects/svt-constructions/showcase.mp4',
+      poster: '/projects/svt-constructions/showcase-poster.webp',
       url: 'svtconstructions.com',
-      ratio: RECORDING,
+      ratio: 1680 / 926, // scripted showcase recording
     },
     summary:
       'A premium real-estate website with scroll-driven storytelling, a featured-projects showcase and clear paths to explore homes or start a conversation.',
@@ -52,10 +50,11 @@ export const projects = [
     theme: 'ember',
     media: {
       type: 'video',
-      src: '/projects/media-boostrs/dashboard.mp4',
-      poster: '/projects/media-boostrs/dashboard-poster.webp',
+      src: '/projects/media-boostrs/admin-demo.mp4',
+      poster: '/projects/media-boostrs/admin-demo-poster.webp',
       url: 'mediaboostrs.com/admin',
-      ratio: RECORDING,
+      ratio: 1680 / 926, // scripted showcase recording
+      focus: 'left top', // keep the sidebar in view when the card crops the sides
     },
     summary:
       'A lightweight admin workspace where the team writes, organises and publishes blog content, with no third party CMS needed.',
@@ -67,7 +66,7 @@ export const projects = [
     client: 'Media Boostrs',
     year: 2026,
     theme: 'sky',
-    media: { type: 'image', src: '/projects/media-boostrs/hero.webp', url: 'mediaboostrs.com', ratio: SCREEN },
+    media: { type: 'video', src: '/projects/media-boostrs/website-demo.mp4', poster: '/projects/media-boostrs/website-demo-poster.webp', url: 'mediaboostrs.com', ratio: 1680 / 926 },
     summary:
       'A bold, conversion-focused agency site presenting SEO, social, ads and content services, with a searchable, filterable blog.',
   },
@@ -84,6 +83,7 @@ export const projects = [
       poster: '/projects/dental-care/tour-demo-poster.webp',
       url: 'dr-amins.netlify.app',
       ratio: 1680 / 926, // scripted showcase recording
+      focus: 'left top',
     },
     summary:
       'A friendly clinic website with a guided online booking flow, designed to reassure new patients and make booking effortless.',
@@ -93,7 +93,6 @@ export const projects = [
   {
     slug: 'adpeek',
     category: 'idea',
-    featured: true,
     title: 'AdPeek: see every ad your competitor is running',
     client: 'Chrome extension idea',
     year: 2026,

@@ -3,43 +3,160 @@
   "label": "mediaboostrs.com",
   "out": "tools/showcase/out/mediaboostrs-showcase.mp4",
   "fps": 60,
-  "background": ["#c3d6ef", "#dcc9f2", "#f3b0c8"],
+  "background": [
+    "#c3d6ef",
+    "#dcc9f2",
+    "#f3b0c8"
+  ],
   "shots": [
-    { "do": "goto" },
-    { "do": "hold", "ms": 1500 },
-    { "do": "move", "to": "a:has-text(\"Get Started\") >> nth=0", "ms": 1000 },
-    { "do": "hold", "ms": 500 },
-    { "do": "scroll", "to": "#what-we-do", "ms": 2200 },
-    { "do": "hold", "ms": 500 },
-    { "do": "move", "to": "text=SEO Services", "ms": 900 },
-    { "do": "hold", "ms": 500 },
-    { "do": "move", "to": "text=Social Media Marketing Chennai", "ms": 800 },
-    { "do": "hold", "ms": 400 },
-    { "do": "scroll", "by": 560, "ms": 1600 },
-    { "do": "move", "to": "text=Video Production", "ms": 900 },
-    { "do": "hold", "ms": 500 },
-    { "do": "scroll", "to": "#portfolio", "ms": 2200 },
-    { "do": "hold", "ms": 500 },
-    { "do": "click", "on": "button:text-is(\"Social Media\")", "wait": 1000 },
-    { "do": "click", "on": "button:text-is(\"Web Design\")", "wait": 1000 },
-    { "do": "click", "on": "button:text-is(\"All\")", "wait": 800 },
-    { "do": "scroll", "by": 700, "ms": 2000 },
-    { "do": "hold", "ms": 400 },
-    { "do": "scroll", "to": "#about", "ms": 2200 },
-    { "do": "scroll", "by": 900, "ms": 2400 },
-    { "do": "hold", "ms": 500 },
-    { "do": "scroll", "to": 5640, "ms": 2200 },
-    { "do": "hold", "ms": 1200 },
-    { "do": "scroll", "to": 6780, "ms": 2200 },
-    { "do": "scroll", "by": 420, "ms": 1400 },
-    { "do": "move", "to": "text=Digital Marketing - Backbone", "ms": 900 },
-    { "do": "hold", "ms": 700 },
-    { "do": "scroll", "to": "#contact", "ms": 2200 },
-    { "do": "hold", "ms": 400 },
-    { "do": "zoom", "scale": 1.4, "on": "text=Get a Free Strategy Session", "ms": 900 },
-    { "do": "hold", "ms": 1300 },
-    { "do": "zoom", "scale": 1, "ms": 700 },
-    { "do": "scroll", "to": 0, "ms": 3000 },
-    { "do": "hold", "ms": 1200 }
+    {
+      "do": "goto"
+    },
+    {
+      "do": "hold",
+      "ms": 1500
+    },
+    {
+      "do": "move",
+      "to": "a:has-text(\"Get Started\") >> nth=0",
+      "ms": 1000
+    },
+    {
+      "do": "hold",
+      "ms": 500
+    },
+    {
+      "do": "scroll",
+      "to": "#what-we-do",
+      "ms": 2200
+    },
+    {
+      "do": "hold",
+      "ms": 500
+    },
+    {
+      "do": "move",
+      "to": "text=SEO Services",
+      "ms": 900
+    },
+    {
+      "do": "hold",
+      "ms": 500
+    },
+    {
+      "do": "move",
+      "to": "text=Social Media Marketing Chennai",
+      "ms": 800
+    },
+    {
+      "do": "hold",
+      "ms": 400
+    },
+    {
+      "do": "hold",
+      "ms": 500
+    },
+    {
+      "do": "scroll",
+      "to": "#portfolio",
+      "ms": 2200
+    },
+    {
+      "do": "hold",
+      "ms": 500
+    },
+    {
+      "do": "click",
+      "on": "button:text-is(\"Social Media\")",
+      "wait": 1000
+    },
+    {
+      "do": "click",
+      "on": "button:text-is(\"All\")",
+      "wait": 800
+    },
+    {
+      "do": "hold",
+      "ms": 900
+    },
+    {
+      "do": "scroll",
+      "by": 700,
+      "ms": 2000
+    },
+    {
+      "do": "hold",
+      "ms": 400
+    },
+    {
+      "do": "scroll",
+      "to": "#about",
+      "ms": 2200
+    },
+    {
+      "do": "scroll",
+      "by": 900,
+      "ms": 2400
+    },
+    {
+      "do": "hold",
+      "ms": 500
+    },
+    {
+      "do": "scroll",
+      "to": 5640,
+      "ms": 2200
+    },
+    {
+      "do": "hold",
+      "ms": 1200
+    },
+    {
+      "do": "scroll",
+      "to": 6780,
+      "ms": 2200
+    },
+    {
+      "do": "scroll",
+      "by": 420,
+      "ms": 1400
+    },
+    {
+      "do": "move",
+      "to": "text=Digital Marketing - Backbone",
+      "ms": 900
+    },
+    {
+      "do": "hold",
+      "ms": 700
+    },
+    {
+      "do": "scroll",
+      "to": "#contact",
+      "ms": 2200
+    },
+    {
+      "do": "hold",
+      "ms": 400
+    },
+    {
+      "do": "zoom",
+      "scale": 1.4,
+      "on": "text=Get a Free Strategy Session",
+      "ms": 900
+    },
+    {
+      "do": "hold",
+      "ms": 1300
+    },
+    {
+      "do": "zoom",
+      "scale": 1,
+      "ms": 700
+    },
+    {
+      "do": "hold",
+      "ms": 800
+    }
   ]
 }

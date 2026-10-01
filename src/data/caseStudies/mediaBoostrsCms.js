@@ -1,6 +1,6 @@
 // Case study: Media Boostrs — custom CMS dashboard
-const RECORDING = 1208 / 540;
 const SCREEN = 1920 / 947;
+const DEMO = 1680 / 926; // scripted showcase recording (tools/showcase)
 
 export default {
   intro:
@@ -9,10 +9,11 @@ export default {
     theme: 'ember',
     media: {
       type: 'video',
-      src: '/projects/media-boostrs/dashboard.mp4',
-      poster: '/projects/media-boostrs/dashboard-poster.webp',
+      src: '/projects/media-boostrs/admin-demo.mp4',
+      poster: '/projects/media-boostrs/admin-demo-poster.webp',
       url: 'mediaboostrs.com/admin',
-      ratio: RECORDING,
+      ratio: DEMO,
+      focus: 'left top',
     },
   },
   facts: [
@@ -51,12 +52,12 @@ export default {
           type: 'media',
           browser: {
             type: 'video',
-            src: '/projects/media-boostrs/dashboard.mp4',
-            poster: '/projects/media-boostrs/dashboard-poster.webp',
+            src: '/projects/media-boostrs/admin-demo.mp4',
+            poster: '/projects/media-boostrs/admin-demo-poster.webp',
             url: 'mediaboostrs.com/admin',
-            ratio: RECORDING,
+            ratio: DEMO,
           },
-          caption: 'Creating a new article: title, excerpt, rich-text body, cover image, category, author, read time and tags.',
+          caption: 'Dashboard tour: filtering live posts, searching the library, then drafting a new article with a title, excerpt, rich text editor, cover image and post settings.',
         },
         {
           type: 'cards',

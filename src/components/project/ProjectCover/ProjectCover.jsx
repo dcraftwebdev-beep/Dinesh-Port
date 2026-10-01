@@ -19,7 +19,7 @@ export default function ProjectCover({ project, mockup, media, theme, wide = fal
     <div className={`${styles.cover} ${themeClass} ${wide ? styles.wide : ''} ${className}`}>
       {coverMedia ? (
         <div className={styles.stage}>
-          <BrowserFrame media={{ alt: project.title, ...coverMedia }} className={styles.frame} />
+          <BrowserFrame media={{ alt: project.title, ...coverMedia }} className={styles.frame} screenClassName={styles.screen} />
         </div>
       ) : (
         <div className={styles.mockupStage}>
